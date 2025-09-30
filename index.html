@@ -4,18 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>translato — AI‑Powered Legal Document Translation</title>
-  <meta name="description" content="AI‑powered legal translation with expert human review. Contracts, affidavits, immigration, court filings, and more. Fast turnaround, notarization options, confidentiality guaranteed." />
+  <meta name="description" content="AI‑powered Document Translation with Human QA. Contracts, affidavits, immigration, court filings, and more. Fast turnaround, notarization options, confidentiality guaranteed." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Tailwind via CDN (good enough for a small static site). For production you can compile locally to reduce size.) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root { --brand:#0f766e; --brand-2:#115e59; }
+    :root {
+      --brand:#f97316; /* orange-500 */
+      --brand-2:#ea580c; /* orange-600 */
+    }
     html { scroll-behavior: smooth; }
     body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
-    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.65); }
+    .glass { backdrop-filter: blur(10px); background: #F2F2F2; }
     .shadow-soft { box-shadow: 0 15px 35px rgba(0,0,0,.08), 0 5px 15px rgba(0,0,0,.06); }
+    .bg-brand { background-color: var(--brand); }
+    .border-brand { border-color: var(--brand); }
+    .text-brand { color: var(--brand); }
   </style>
   <!-- Favicon placeholder -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚖️</text></svg>">
@@ -30,7 +36,7 @@
         "name": "translato",
         "url": "https://translato.in",
         "logo": "https://translato.in/logo.png",
-        "description": "AI‑powered legal document translation with optional certification, sworn translators, and human legal QA.",
+        "description": "AI‑powered Document Translation with Human QA.",
         "areaServed": "Worldwide",
         "contactPoint": [{
           "@type": "ContactPoint",
@@ -73,25 +79,25 @@
   }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-orange-50 text-slate-800">
   <!-- Top bar -->
-  <header class="sticky top-0 z-40 glass border-b border-slate-200/70">
+  <header class="sticky top-0 z-40 glass border-b border-orange-200/70">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <a href="#home" class="flex items-center gap-2 font-semibold text-slate-900">
-          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-teal-700 text-white">t</span>
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-orange-700 text-white">t</span>
           <span>translato</span>
         </a>
         <nav class="hidden gap-6 text-sm font-medium text-slate-700 md:flex">
-          <a href="#services" class="hover:text-teal-700">Services</a>
-          <a href="#process" class="hover:text-teal-700">Process</a>
-          <a href="#ai" class="hover:text-teal-700">How it works</a>
-          <a href="#pricing" class="hover:text-teal-700">Pricing</a>
-          <a href="#faq" class="hover:text-teal-700">FAQ</a>
-          <a href="#contact" class="hover:text-teal-700">Contact</a>
+          <a href="#services" class="hover:text-orange-700">Services</a>
+          <a href="#process" class="hover:text-orange-700">Process</a>
+          <a href="#ai" class="hover:text-orange-700">How it works</a>
+          <a href="#pricing" class="hover:text-orange-700">Pricing</a>
+          <a href="#faq" class="hover:text-orange-700">FAQ</a>
+          <a href="#contact" class="hover:text-orange-700">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation." target="_blank" rel="noopener" class="hidden rounded-xl bg-teal-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-800 md:inline-block">WhatsApp Us</a>
+          <a href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation." target="_blank" rel="noopener" class="hidden rounded-xl bg-orange-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-800 md:inline-block">WhatsApp Us</a>
           <a href="mailto:info@translato.in?subject=Legal%20Translation%20Inquiry" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-white">Email</a>
         </div>
       </div>
@@ -99,19 +105,19 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-white to-slate-50">
+  <section id="home" class="relative overflow-hidden bg-white"> <!-- bg-gradient-to-b from-white to-orange-50"> -->
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
       <div class="grid items-center gap-12 md:grid-cols-2">
         <div>
-          <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">AI‑powered Legal Translation with Human QA — <span class="text-teal-700">Fast</span> & Confidential</h1>
+          <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">AI‑powered Document Translation with Human QA — <span class="text-orange-700">E</span>conomical, Fast, Accurate & Confidential</h1>
           <p class="mt-5 text-lg text-slate-700">Contracts, affidavits, immigration filings, court submissions, patents, and more. AI engine + human legal linguists. Optional notarization and sworn translations where required.</p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#pricing" class="rounded-xl bg-teal-700 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:bg-teal-800">See Pricing</a>
+            <a href="#pricing" class="rounded-xl bg-orange-700 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:bg-orange-800">See Pricing</a>
             <a href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation." target="_blank" rel="noopener" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-white">Get a Quote on WhatsApp</a>
           </div>
           <div class="mt-8 flex items-center gap-6 text-sm text-slate-600">
-            <div class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-teal-600"></span> <span>24–48h standard turnaround</span></div>
-            <div class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-teal-600"></span> <span>NDAs + encrypted delivery</span></div>
+            <div class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-orange-600"></span> <span>24–48h standard turnaround</span></div>
+            <div class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-orange-600"></span> <span>NDAs + encrypted delivery</span></div>
           </div>
         </div>
         <div class="relative">
@@ -120,21 +126,21 @@
             <form class="grid gap-4 text-sm" onsubmit="return buildMailto(event)">
               <div>
                 <label class="mb-1 block font-medium">Your email</label>
-                <input id="q-email" type="email" required placeholder="you@company.com" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="q-email" type="email" required placeholder="you@company.com" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <div>
                   <label class="mb-1 block font-medium">From language</label>
-                  <input id="q-from" type="text" placeholder="e.g., Spanish" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                  <input id="q-from" type="text" placeholder="e.g., Spanish" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
                 </div>
                 <div>
                   <label class="mb-1 block font-medium">To language</label>
-                  <input id="q-to" type="text" placeholder="e.g., English" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                  <input id="q-to" type="text" placeholder="e.g., English" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
                 </div>
               </div>
               <div>
                 <label class="mb-1 block font-medium">Document type</label>
-                <select id="q-type" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none">
+                <select id="q-type" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none">
                   <option>Contract / Agreement</option>
                   <option>Affidavit / Notarized</option>
                   <option>Immigration (e.g., USCIS)</option>
@@ -145,14 +151,14 @@
               </div>
               <div>
                 <label class="mb-1 block font-medium">Estimated pages</label>
-                <input id="q-pages" type="number" min="1" step="1" placeholder="e.g., 3" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="q-pages" type="number" min="1" step="1" placeholder="e.g., 3" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
               <div>
                 <label class="mb-1 block font-medium">Notes (optional)</label>
-                <textarea id="q-notes" rows="3" placeholder="Deadlines, certification needs, special formatting…" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none"></textarea>
+                <textarea id="q-notes" rows="3" placeholder="Deadlines, certification needs, special formatting…" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none"></textarea>
               </div>
               <div class="flex flex-col gap-3 sm:flex-row">
-                <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800">Email Estimate</button>
+                <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-orange-700 px-4 py-2 font-semibold text-white hover:bg-orange-800">Email Estimate</button>
                 <a id="wa-quote" href="https://wa.me/14155550123" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 font-semibold hover:bg-white">Send on WhatsApp</a>
               </div>
               <p class="text-xs text-slate-500">We do not store uploads on this site. Share files via email or WhatsApp; we sign NDAs on request.</p>
@@ -218,22 +224,22 @@
       </div>
       <div class="grid gap-6 md:grid-cols-4">
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-          <div class="text-xs font-semibold text-teal-700">Step 1</div>
+          <div class="text-xs font-semibold text-orange-700">Step 1</div>
           <h3 class="mt-1 font-semibold">Send Documents</h3>
-          <p class="mt-2 text-sm text-slate-600">Email <a class="text-teal-700 underline" href="mailto:info@translato.in">info@translato.in</a> or WhatsApp <a class="text-teal-700 underline" target="_blank" rel="noopener" href="https://wa.me/14155550123">+91 9311106787</a>.</p>
+          <p class="mt-2 text-sm text-slate-600">Email <a class="text-orange-700 underline" href="mailto:info@translato.in">info@translato.in</a> or WhatsApp <a class="text-orange-700 underline" target="_blank" rel="noopener" href="https://wa.me/14155550123">+91 9311106787</a>.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-          <div class="text-xs font-semibold text-teal-700">Step 2</div>
+          <div class="text-xs font-semibold text-orange-700">Step 2</div>
           <h3 class="mt-1 font-semibold">Get a Fixed Quote</h3>
           <p class="mt-2 text-sm text-slate-600">We assess volume, complexity, formatting and certification needs; you approve before we begin.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-          <div class="text-xs font-semibold text-teal-700">Step 3</div>
+          <div class="text-xs font-semibold text-orange-700">Step 3</div>
           <h3 class="mt-1 font-semibold">Translation & QA</h3>
           <p class="mt-2 text-sm text-slate-600">Native legal linguists + second-pass review. Terminology consistency with glossaries.</p>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-          <div class="text-xs font-semibold text-teal-700">Step 4</div>
+          <div class="text-xs font-semibold text-orange-700">Step 4</div>
           <h3 class="mt-1 font-semibold">Delivery & Certification</h3>
           <p class="mt-2 text-sm text-slate-600">Encrypted delivery (PDF/Word). Certification letter/notarization as needed.</p>
         </div>
@@ -286,7 +292,7 @@
       <div class="grid gap-6 md:grid-cols-3">
         <!-- Tier 1 -->
         <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-          <div class="mb-2 text-sm font-semibold text-teal-700">Standard</div>
+          <div class="mb-2 text-sm font-semibold text-orange-700">Standard</div>
           <h3 class="text-3xl font-extrabold">49<span class="text-base font-medium text-slate-500">/page</span></h3>
           <p class="mt-2 text-sm text-slate-600">General legal docs, certificates; 48h typical.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-700">
@@ -294,24 +300,24 @@
             <li>Two-pass human QA</li>
             <li>PDF & DOCX delivery</li>
           </ul>
-          <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800">Start</a>
+          <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-orange-700 px-4 py-2 font-semibold text-white hover:bg-orange-800">Start</a>
         </div>
         <!-- Tier 2 -->
-        <div class="relative rounded-2xl border-2 border-teal-700 bg-white p-6 shadow-soft">
-          <div class="absolute -top-3 right-4 rounded-full bg-teal-700 px-3 py-1 text-xs font-semibold text-white">Most Popular</div>
-          <div class="mb-2 text-sm font-semibold text-teal-700">Certified</div>
-          <h3 class="text-3xl font-extrabold">49<span class="text-base font-medium text-slate-500">/page</span></h3>
+        <div class="relative rounded-2xl border-2 border-orange-700 bg-white p-6 shadow-soft">
+          <div class="absolute -top-3 right-4 rounded-full bg-orange-700 px-3 py-1 text-xs font-semibold text-white">Most Popular</div>
+          <div class="mb-2 text-sm font-semibold text-orange-700">Certified</div>
+          <h3 class="text-3xl font-extrabold">49<span class="text-base font-medium text-orange-500">/page</span></h3>
           <p class="mt-2 text-sm text-slate-600">Certification letter for courts, USCIS, schools.</p>
           <ul class="mt-4 space-y-2 text-sm text-slate-700">
             <li>Everything in Standard</li>
             <li>Signed certification letter</li>
             <li>Priority support</li>
           </ul>
-          <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800">Get Certified</a>
+          <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-orange-700 px-4 py-2 font-semibold text-white hover:bg-orange-800">Get Certified</a>
         </div>
         <!-- Tier 3 -->
         <div class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-          <div class="mb-2 text-sm font-semibold text-teal-700">Sworn/Notarized</div>
+          <div class="mb-2 text-sm font-semibold text-orange-700">Sworn/Notarized</div>
             <h3 class="text-3xl font-extrabold">69<span class="text-base font-medium text-slate-500">/page</span></h3>
             <p class="mt-2 text-sm text-slate-600">Country-specific sworn translator or notarization.</p>
             <ul class="mt-4 space-y-2 text-sm text-slate-700">
@@ -319,7 +325,7 @@
               <li>Notary / sworn translator (where applicable)</li>
               <li>Apostille guidance</li>
             </ul>
-            <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800">Request</a>
+            <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-orange-700 px-4 py-2 font-semibold text-white hover:bg-orange-800">Request</a>
         </div>
       </div>
       <p class="mt-6 text-sm text-slate-500">* Page = up to 250 words of source text. Minimum order: 1 page. Rush (same‑day) +30–50% depending on availability.</p>
@@ -361,7 +367,7 @@
           <h2 class="text-3xl font-bold">Contact</h2>
           <p class="mt-2 text-slate-600">Fastest response via WhatsApp or email. Include language pair, page count, deadline, and whether you need certification or notarization.</p>
           <div class="mt-6 flex flex-col gap-3 text-sm">
-            <a class="inline-flex w-fit items-center gap-2 rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800" target="_blank" rel="noopener" href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation.">WhatsApp: +91-9311106787</a>
+            <a class="inline-flex w-fit items-center gap-2 rounded-xl bg-orange-700 px-4 py-2 font-semibold text-white hover:bg-orange-800" target="_blank" rel="noopener" href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation.">WhatsApp: +91-9311106787</a>
             <a class="inline-flex w-fit items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 font-semibold hover:bg-white" href="mailto:info@translato.in?subject=Legal%20Translation%20Inquiry">Email: contact@yourdomain.com</a>
           </div>
           <p class="mt-6 text-xs text-slate-500">By contacting us you agree to our <a href="#" class="underline">Terms</a> and <a href="#" class="underline">Privacy Policy</a>. We do not share your documents with third parties without consent.</p>
@@ -372,43 +378,43 @@
             <div class="grid grid-cols-2 gap-3">
               <div>
                 <label class="mb-1 block font-medium">Name</label>
-                <input id="c-name" type="text" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="c-name" type="text" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
               <div>
                 <label class="mb-1 block font-medium">Email</label>
-                <input id="c-email" type="email" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="c-email" type="email" required class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
             </div>
             <div class="grid grid-cols-2 gap-3">
               <div>
                 <label class="mb-1 block font-medium">From</label>
-                <input id="c-from" type="text" placeholder="e.g., French" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="c-from" type="text" placeholder="e.g., French" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
               <div>
                 <label class="mb-1 block font-medium">To</label>
-                <input id="c-to" type="text" placeholder="e.g., English" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="c-to" type="text" placeholder="e.g., English" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
             </div>
             <div>
               <label class="mb-1 block font-medium">Document type</label>
-              <input id="c-type" type="text" placeholder="Contract, certificate, court filing…" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+              <input id="c-type" type="text" placeholder="Contract, certificate, court filing…" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
             </div>
             <div class="grid grid-cols-2 gap-3">
               <div>
                 <label class="mb-1 block font-medium">Pages</label>
-                <input id="c-pages" type="number" min="1" step="1" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="c-pages" type="number" min="1" step="1" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
               <div>
                 <label class="mb-1 block font-medium">Deadline</label>
-                <input id="c-deadline" type="date" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none" />
+                <input id="c-deadline" type="date" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none" />
               </div>
             </div>
             <div>
               <label class="mb-1 block font-medium">Notes</label>
-              <textarea id="c-notes" rows="4" placeholder="Any certification/notarization needs, formatting, references…" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-teal-700 focus:outline-none"></textarea>
+              <textarea id="c-notes" rows="4" placeholder="Any certification/notarization needs, formatting, references…" class="w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-orange-700 focus:outline-none"></textarea>
             </div>
             <div class="flex flex-col gap-3 sm:flex-row">
-              <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-teal-700 px-4 py-2 font-semibold text-white hover:bg-teal-800">Email Quote Request</button>
+              <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-orange-700 px-4 py-2 font-semibold text-white hover:bg-orange-800">Email Quote Request</button>
               <a id="wa-contact" href="https://wa.me/14155550123" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 font-semibold hover:bg-white">Open WhatsApp</a>
             </div>
           </form>
@@ -421,16 +427,16 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
       <div class="text-sm text-slate-600">© <span id="y"></span> translato. All rights reserved.</div>
       <div class="flex gap-4 text-sm">
-        <a href="#pricing" class="hover:text-teal-700">Pricing</a>
-        <a href="#faq" class="hover:text-teal-700">FAQ</a>
-        <a href="#" class="hover:text-teal-700">Privacy</a>
-        <a href="#" class="hover:text-teal-700">Terms</a>
+        <a href="#pricing" class="hover:text-orange-700">Pricing</a>
+        <a href="#faq" class="hover:text-orange-700">FAQ</a>
+        <a href="#" class="hover:text-orange-700">Privacy</a>
+        <a href="#" class="hover:text-orange-700">Terms</a>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp button -->
-  <a href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation." target="_blank" rel="noopener" class="fixed bottom-6 right-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-teal-700 text-white shadow-soft hover:bg-teal-800" aria-label="WhatsApp">
+  <a href="https://wa.me/919311106787?text=Hello%20translato%2C%20I%20need%20a%20legal%20translation." target="_blank" rel="noopener" class="fixed bottom-6 right-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-orange-700 text-white shadow-soft hover:bg-orange-800" aria-label="WhatsApp">
     <!-- WhatsApp icon (simple) -->
     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.94 14.56L2 22l5.6-1.47A10 10 0 1 0 12 2zm5.45 14.18c-.23.64-1.12 1.17-1.77 1.33-.47.1-1.08.18-3.17-.66-2.66-1.1-4.38-3.79-4.52-3.97-.13-.18-1.08-1.44-1.08-2.75s.67-1.95.91-2.22c.24-.27.53-.34.71-.34h.51c.16 0 .39-.06.6.46.23.56.78 1.93.85 2.07.07.14.11.31.02.5-.08.2-.12.31-.24.48-.13.17-.25.39-.36.53-.12.14-.25.3-.11.57.14.27.63 1.04 1.36 1.69.94.84 1.73 1.1 2 .1.27-1 .62-1.19.93-1.06.31.13 1.98.93 2.32 1.1.34.17.57.25.65.39.08.14.08.81-.15 1.45z"/></svg>
   </a>
